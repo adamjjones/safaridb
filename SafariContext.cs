@@ -7,7 +7,8 @@ namespace SafariVacation
 {
   public partial class SafariContext : DbContext
   {
-    public DbSet<safari> Animals { get; set; }
+    // public DbSet<safari> Animals { get; set; }
+    public DbSet<Animal> Animals { get; set; }
     public SafariContext()
     {
     }
@@ -30,6 +31,5 @@ namespace SafariVacation
     {
       modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
     }
-    public DbSet<safari> Safaris { get; set; }
   }
 }
